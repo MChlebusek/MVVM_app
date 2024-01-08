@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="MVVM_app.Views.DBFriendPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Nimi:"/>
+            <Entry Text="{Binding Name}"/>
+            <Label Text="Email:"/>
+            <Entry Text="{Binding Email}"/>
+            <Label Text="Phone:"/>
+            <Entry Text="{Binding Phone}"/>
+            <Label Text="Vanus:"/>
+            <Entry Text="{Binding Age}"/>
+            <StackLayout Orientation="Horizontal">
+                <Button x:Name="Salvesta" Text="Salvesta" Clicked="Salvesta_Clicked"/>
+                <Button x:Name="Kustuta"  Text="Kustuta" Clicked="Kustuta_Clicked"/>
+                <Button x:Name="Loobu" Text="Loobu" Clicked="Loobu_Clicked" />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
